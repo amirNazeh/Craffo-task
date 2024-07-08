@@ -1,0 +1,26 @@
+.swiper-pagination-bullet {
+  width: 50px;
+  height: 4px;
+  background-color: gray;
+  opacity: 0.5;
+  border-radius: 2px;
+  margin: 0 5px;
+  transform-origin: left;
+}
+@keyframes slideIn {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}
+.swiper-pagination-bullet-active {
+  background-color: white;
+  opacity: 1;
+
+  animation: slideIn 4s forwards;
+}
+.swiper-pagination {
+  margin-bottom: 20px;
+}
